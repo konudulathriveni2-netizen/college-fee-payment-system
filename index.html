@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Fee Payment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>College Fee Payment</h1>
+        <p class="subtitle">Online Payment & Queue Management</p>
+
+        <form id="feeForm">
+
+            <label>Student Name</label>
+            <input type="text" id="studentName"
+                   placeholder="Enter your name" required>
+
+            <label>Roll Number</label>
+            <input type="text" id="rollNumber"
+                   placeholder="Enter roll number" required>
+
+            <label>Fee Type</label>
+            <select id="feeType" required>
+                <option value="">Select Fee Type</option>
+                <option value="Tuition Fee">Tuition Fee - ₹25,000</option>
+                <option value="Exam Fee">Exam Fee - ₹2,000</option>
+                <option value="Library Fee">Library Fee - ₹1,000</option>
+            </select>
+
+            <button type="submit">Pay Now</button>
+
+        </form>
+
+        <div id="receipt" class="receipt"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
